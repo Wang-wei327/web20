@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>背景裁剪文字效果</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .text {
+      font-size: 60px;
+      font-weight: bold;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      margin: 20px 0;
+    }
+
+    .rainbow {
+      background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    }
+
+    .sunset {
+      background-image: linear-gradient(to right, #ff5e3a, #ff9500, #ffcc00);
+    }
+
+    .fire {
+      background-image: linear-gradient(to right, red, orange);
+    }
+
+    .city {
+      background-image: url('https://picsum.photos/600/100'); /* 也可放你自己的圖片 */
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>使用 <code>background-clip</code> 製作文字背景效果</h1>
+
+  <div class="text rainbow">HAVE A NICE DAY !</div>
+  <div class="text sunset">HAVE A NICE DAY !</div>
+  <div class="text fire">HAVE A NICE DAY !</div>
+  <div class="text city">HAVE A NICE DAY !</div>
+
+</body>
+</html>
